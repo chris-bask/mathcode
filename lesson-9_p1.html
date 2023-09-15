@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SchoolCrop</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" />
+  <!-- custom styles -->
+  <link rel="stylesheet" href="../Assets/css/custom-styles.css" />
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <style>
+    .chapeter_topic {
+      color: black;
+      position: relative;
+      top: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md mr-auto navbar-light bg-light" aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="logo">
+          <img src="../Assets/images/logo.png" alt="logo-image" />
+        </div>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ToggleBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="ToggleBar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <div class="chapter-title">
+              <h4 class="chapeter_topic">Chapter : 9</h4>
+              <div class="icon">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#grid-toggle">
+                  <i style="color: black; position: relative; top: 0.45rem" class="fa fa-th" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container subject_container" style="position: relative; top: 1rem">
+    <div class="subject_topic">
+      <div class="col-md-6">
+        <div class="custom">
+          <div>
+            <h5>
+              Subject
+
+              <b>: Maths</b>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="custom">
+          <div>
+            <h5>
+              Chapter 9
+
+              <b>: Tangents and Secants / Part-1</b>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <!-- <iframe style="width: 100%;height:100%;" src="./Part_1/1.html" id="myframe" name="myframe"></iframe> -->
+      <iframe style="position: relative; bottom: 1rem" class="needs_iframe" src="./part-1/1.html" id="myframe"
+        name="myframe"></iframe>
+    </div>
+
+    <div class="row" style="position: relative; top: 3rem">
+      <div class="col md-12 pb-3 position-relative">
+        <div class="navigation-btns text-center position-relative">
+          <button type="button" class="btn w-0 bg-white bg-orange btn-prev" onclick="prev()">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </button>
+          <!-- <button type="button" class="btn btn-success">SUBMIT</button> -->
+          <button type="button" class="btn w-0 bg-white bg-orange btn-nxt" onclick="next()">
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="close-chapter float-end text-white position-absolute">
+          <a href="./Tangents&Secants-chapter.html">
+            <p>CLOSE </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- correcr Answer -->
+    <div class="offcanvas offcanvas-bottom bg-success" tabindex="-1" id="offcanvasBottomCorrectAns"
+      aria-labelledby="offcanvasBottomCorrectAnsLabel">
+      <div class="offcanvas-body small text-center d-flex align-items-center justify-content-center position-relative">
+        <h2><b>Correct Answer</b></h2>
+        <button type="button" class="btn-close text-reset position-absolute close-mark" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+    </div>
+    <!-- end of Correct Ansswer toggle -->
+    <!-- Wrong Answer -->
+    <div class="offcanvas offcanvas-bottom bg-error" tabindex="-1" id="offcanvasBottomWrongAns"
+      aria-labelledby="offcanvasBottomWrongAnsLabel">
+      <div class="offcanvas-body small text-center d-flex align-items-center justify-content-center position-relative">
+        <h2><b>Wrong Answer</b></h2>
+        <button type="button" class="btn-close text-reset close-mark position-absolute" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade right-align-custom" id="grid-toggle" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-btn-set">
+            <a href="./part-1/1.html" target="myframe"><button type="button" class="btn btn-secondary">1</button></a>
+            <a href="./part-1/2.html" target="myframe"><button type="button" class="btn btn-secondary">2</button></a>
+            <a href="./part-1/3.html" target="myframe"><button type="button" class="btn btn-secondary">3</button></a>
+            <a href="./part-1/4.html" target="myframe"><button type="button" class="btn btn-secondary">4</button></a>
+            <a href="./part-1/5.html" target="myframe"><button type="button" class="btn btn-secondary">5</button></a>
+            <a href="./part-1/6.html" target="myframe"><button type="button" class="btn btn-secondary">6</button></a>
+            <a href="./part-1/7.html" target="myframe"><button type="button" class="btn btn-secondary">7</button></a>
+            <a href="./part-1/8.html" target="myframe"><button type="button" class="btn btn-secondary">8</button></a>
+            <a href="./part-1/9.html" target="myframe"><button type="button" class="btn btn-secondary">9</button></a>
+            <a href="./part-1/10.html" target="myframe"><button type="button" class="btn btn-secondary">10</button></a>
+            <a href="./part-1/11.html" target="myframe"><button type="button" class="btn btn-secondary">11</button></a>
+            <a href="./part-1/12.html" target="myframe"><button type="button" class="btn btn-secondary">12</button></a>
+            <a href="./part-1/13.html" target="myframe"><button type="button" class="btn btn-secondary">13</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 copyrights">
+          <p class="float-start">
+            Copyrights &#169; 2023. All rights Reserved.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="float-end footer-transition">
+            <p>Powered By</p>
+            <p>TECHADLIEN Private Limited</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- gsap -->
+  <script src="../Assets/js/gsap.min.js"></script>
+  <script src="../Assets/js/custom-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    var files = [
+      "./part-1/1.html",
+      "./part-1/2.html",
+      "./part-1/3.html",
+      "./part-1/4.html",
+      "./part-1/5.html",
+      "./part-1/6.html",
+      "./part-1/7.html",
+      "./part-1/8.html",
+      "./part-1/9.html",
+      "./part-1/10.html",
+      "./part-1/11.html",
+      "./part-1/12.html",
+      "./part-1/13.html",
+    ]; // List of HTML files to display
+
+    var index = 0; // Current index of the file being displayed
+
+    function next() {
+      index++;
+      if (index >= files.length) {
+        index = 0;
+      }
+      document.getElementById("myframe").src = files[index];
+    }
+
+    function prev() {
+      index--;
+      if (index < 0) {
+        index = files.length - 1;
+      }
+      document.getElementById("myframe").src = files[index];
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+  <script>
+    gsap.from(".custom-block, .logo", {
+      opacity: 0,
+      duration: 2,
+      delay: 0.5,
+      y: 60,
+    });
+    //gsap.from('', {opacity: 0, duration:2, delay:.8, y:25});
+    gsap.from(".navbar-nav, .anim p", {
+      opacity: 0,
+      duration: 2,
+      delay: 0.5,
+      x: 50,
+    });
+    //gsap.from('', {opacity: 0, duration:2, delay:.5, x:50});
+    gsap.from(".footer", { duration: 1, y: "-100%", ease: "bounce" });
+    gsap.from(".copyrights, .footer-transition", { duration: 5, opacity: 0 });
+    gsap.from(".offcanvas-bottom", { duration: 4, opacity: 0 });
+    gsap.from(".question", { duration: 3, opacity: 0 });
+  </script>
+</body>
+
+</html>
